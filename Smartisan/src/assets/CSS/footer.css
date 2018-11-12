@@ -1,0 +1,63 @@
+#footer{
+    width: 100%;
+    background: #292929;
+}
+#footer div.footer-top{
+    width: 100%;
+    height: 360px;
+    margin: 0 auto;
+}
+#footer div.footer-top div.footer-top-content{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 35px;
+    padding-bottom: 60px;
+    margin: 0 auto;
+}
+#footer div.footer-top div.footer-top-content ul li{
+    margin-bottom: 5px;
+}
+#footer div.footer-top div.footer-top-content ul li:first-child{
+    margin-bottom: 15px;
+}
+#footer div.footer-top div.footer-top-content ul li>a{
+    color:#fff;
+    font-size: 12px;
+}
+#footer div.footer-top div.footer-top-content ul li:first-child a{
+    font-size: 18px;
+}
+div.footer-top-content ul.typography li.company{
+    margin-top: 20px;
+}
+div.footer-top-content ul.typography li:nth-child(7){
+    margin-top: 20px;
+}
+div.footer-top-content ul:last-child li img{
+    padding: 10px;
+}
+#footer div.footer-bottom{
+    width: 100%;
+    background: black;
+    height: 50px;
+}
+#footer .footer-bottom-content{
+    width: 1200px;
+    line-height: 50px;
+    margin: 0 auto;
+}
+#footer .footer-bottom-content ul{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+.footer-bottom-content ul li,.footer-bottom-content ul li a{
+    color: #4D4D4D;
+}
+#footer .footer-bottom-content ul li a:hover{
+    color: #68696D;
+}
+
+
+

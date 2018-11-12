@@ -1,0 +1,445 @@
+#detail-main{
+    width: 100%;
+    margin: 0 auto;
+}
+/*面包屑导航*/
+.crumbs{
+    width: 80%;
+    margin: 0px 0 10px 0;
+  padding-top: 100px;
+}
+.crumbs  ul{
+    display: flex;
+    margin-left: 10%;
+}
+.crumbs  ul li a{
+    margin-right: 30px;
+    display: inline-block;
+    position: relative;
+    height: 30px;
+    padding: 10px 20px 0 20px;
+    text-align: center;
+    line-height:20px;
+    background-color: #ccc;
+    color: #000;
+    font-size: 20px;
+}
+.crumbs  ul li a:after{
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 0;
+
+    border-left: 20px solid #ccc;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+.crumbs  ul li a:before{
+    content: "";
+    border-top: 20px solid #ccc;
+    border-bottom: 20px solid #ccc;
+    border-left: 20px solid transparent;
+    position: absolute;
+    top: 0;
+    left: -20px;
+}
+.crumbs  ul li:first-child a{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.crumbs ul li:first-child a:before{
+    display: none;
+}
+.crumbs ul li:last-child a{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.crumbs ul li:last-child a:after{
+    display: none;
+}
+.crumbs ul li a:hover{
+    background-color:#555;
+    color: white;
+}
+.crumbs ul li a:hover:after{
+    border-left-color: #555;
+}
+.crumbs ul li a:hover:before{
+    border-top-color: #555;
+    border-bottom-color: #555;
+}
+/*商品图片放大镜*/
+.site-container{
+    width: 100%;
+    height: 640px;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    display: flex;
+}
+.preview{
+    width: 60%;
+    height: 600px;
+}
+.site-container .md-img{
+    margin-left: 10%;
+    position: relative;
+  height: 600px;
+}
+.md-img > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.md-img > img.show {
+  opacity: 1;
+  z-index: 1;
+}
+#mask{
+    position: absolute;
+    top:0;
+    left:0;
+    background: yellow;
+    opacity: 0.2;
+    z-index: 3;
+    width: 320px;
+    height: 300px;
+    display: none;
+}
+#super-mask{
+    position: absolute;
+    left:640px;
+    top:0;
+    border: 1px solid #ccc;
+    /*background: red;*/
+    /*opacity: 0.1;*/
+    width: 640px;
+    height: 600px;
+    display: none;
+    overflow: hidden;
+}
+#div-lg{
+  width: 640px;
+  height: 600px;
+  background: red;
+  opacity: 0;
+  z-index: 4;
+  position: relative;
+  top:0;
+}
+#super-mask>img{
+  position: absolute;
+  top:0;
+  left:0;
+  display: none;
+  z-index: 3;
+}
+#super-mask>img.show{
+  display: block;
+}
+/*商品详情*/
+
+.site-container .lipdetail{
+    width: 15%;
+    height: 100%;
+    border-left:1px solid #ccc;
+}
+.lipdetail .lipdetail-header{
+    padding: 15px;
+    /*border-bottom: 1px solid #ccc;*/
+}
+.lipdetail-header p,h1.lip-title{
+    padding: 8px;
+}
+.lipdetail-header p{
+    font-size: 12px;
+}
+#alldesc{
+    font-size: 12px;
+    /*height: 60px;*/
+    display: none;
+}
+#colorse{
+    width: 90%;
+    height: 50px;
+    outline: #ccc;
+    margin: 10px 0;
+    margin-left: 5%;
+}
+.lipdetail-footer h2, .lipdetail-footer p{
+    padding: 10px 20px;
+}
+.lipdetail-footer{
+    position: relative;
+}
+div.lipcolorh2{
+  position:relative;
+  height: 80px;
+}
+.lipdetail-footer>div.lipcolorh2>h2{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.lipdetail-footer>div.lipcolorh2>h2.show{
+  opacity: 1;
+  z-index: 2;
+ }
+p.lip-comment{
+  margin-top:20px;
+}
+
+.lipdetail-footer p{
+    font-size: 12px;
+}
+.lipdetail-footer p a.write{
+    margin-left: 15px;
+}
+.lipdetail-footer p a:hover{
+    color: #bbb;
+}
+.lipdetail-footer p.detail-desc{
+    border-top:1px solid #ccc;
+    padding-bottom: 5px;
+}
+.lipdetail-footer p span.share{
+    position: relative;
+}
+/*.lipdetail-footer p span.share,img.share-img{
+    float: right;
+}*/
+.lipdetail-footer p span.share img.share-img {
+    position: absolute;
+    right: 5px;
+    top:35px;
+}
+div.content{
+   display: flex;
+    flex-direction:column;
+    margin-top: 20px;
+    align-items: center;
+}
+div.content a.cart{
+    display: block;
+    color: #fff;
+    background: #000;
+    padding:15px 0;
+    text-align: center;
+    width: 80%;
+}
+div.content p{
+    margin: 10px;
+}
+p.lipcolor{
+  position: absolute;
+  top: 35%;
+  left: 0;
+  opacity: 0;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+p.show{
+  opacity: 1;
+  z-index: 1;
+}
+/*颜色控制器*/
+.site-container .colorfull{
+    width: 25%;
+    border-left: 1px solid #ccc;
+    height: 100%;
+}
+div.colorselect{
+    height: 580px;
+    overflow: hidden;
+}
+div.colorselect ul{
+    height: 950px;
+  /*margin-top: -500px;*/
+
+}
+div.colorselect ul li{
+    height: 100px;
+    overflow: hidden;
+}
+div.colorselect ul li img{
+    width: 100%;
+}
+button.prev,button.next{
+  cursor: pointer;
+}
+div.colorselect ul li:first-child{
+height: 180px;
+}
+
+/*推荐商品区*/
+div.recommend{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 2px solid #ccc;
+}
+div.recommend h1{
+    margin: 40px 0;
+}
+div.recommendlist{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+div.p-detail{
+    border-top: 1px solid #c7c7c7;
+    margin:10px 5px 40px 5px;
+    width: 24%;
+    box-sizing: border-box;
+
+}
+div.p-detail div.p-header-detail {
+    height: 100px;
+}
+div.p-detail h1{
+    text-align: center;
+    margin: 100px 0 30px 0;
+}
+div.p-detail p.p-detail{
+    margin-top: 50px;
+    padding: 5px;
+}
+div.p-detail p{
+    font-size: 12px;
+}
+div.p-detail p.p-title{
+    font-size: 20px;
+    margin: 10px 0;
+}
+div.p-detail p.p-title:hover{
+    color:#68696D;
+}
+div.p-detail div.p-img{
+    margin-top: 20px;
+}
+div.p-header-detail a.collect{
+    float: right;
+}
+div.p-content{
+    border-top: 1px solid #c7c7c7;
+}
+div.p-content div{
+    margin-top: 10px;
+}
+div.p-content span.p-price{
+    font-size: 18px;
+    margin: 10px;
+}
+div.p-detail div.p-content a.cart{
+    display: inline;
+    padding: 10px;
+    background: black;
+    color: white;
+    float: right;
+    margin-top: 10px;
+}
+/*评论区*/
+.comment{
+    width: 80%;
+    margin: 0 auto;
+}
+.comment h1{
+    text-align: center;
+    margin: 30px;
+}
+.advantage{
+    margin: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+.advantage .title{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.advantage .title span{
+    font-weight: normal;
+    padding: 10px;
+}
+.advantage .title span:hover{
+    background: #4D4D4D;
+}
+
+
+#write{
+    color: #fff;
+    background: #000;
+    padding: 10px 20px;
+    display: inline-block;
+}
+.comment-info{
+    margin: 0 auto;
+    text-align: center;
+}
+.comment-info span{
+    margin: 20px 20px;
+}
+
+#read{
+    width: 70%;
+    margin: 0 auto;
+}
+#read .comment-desc{
+    margin: 30px 0 10px 0;
+    border-top: 1px solid #ccc;
+    padding-top: 30px;
+    position: relative;
+}
+div.comment-user{
+    float: right;
+    color: #ccc;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+}
+.comment-title{
+    padding: 10px 0;
+}
+.comment-title .morningstar{
+    font-weight: bold;
+}
+.comment-detail{
+    padding: 10px 0;
+    font-size: 12px;
+}
+a.show{
+    padding: 0 30px 0 0;
+}
+dl.pr-rd-def-list{
+    padding: 10px 0;
+    font-weight: bold;
+    display: none;
+}
+dd{
+    font-size: 12px;
+    padding: 10px 0;
+    font-weight: normal;
+}
+.recommend-comment,.help{
+    /*font-size: 12px;*/
+    padding: 10px 0;
+}
+span.have,span.no{
+    padding: 0 10px;
+}
+p.tip{
+    float: right;
+    position: absolute;
+    bottom: 20px;
+    right:20px;
+    font-size: 14px;
+}
+
+

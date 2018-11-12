@@ -1,0 +1,63 @@
+.plist{
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 5%;
+}
+.search{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+.search input,button{
+  height: 50px;
+  font-size: 30px;
+}
+.prolist{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+div.p-detail{
+  margin-top: 50px;
+  padding: 5px;
+  width: 24%;
+}
+div.plist  div.p-detail p{
+  font-size: 12px;
+}
+div.plist  div.p-detail  p.p-title{
+  font-size: 20px;
+  margin: 10px 0;
+}
+div.plist  div.p-detail p.p-title:hover{
+  color:#68696D;
+}
+div.plist  div.p-detail div.p-img{
+  margin-top: 20px;
+}
+/*收藏*/
+div.p-header-detail a.collect{
+  float: right;
+}
+div.plist div.p-content{
+  border-top: 1px solid #c7c7c7;
+
+}
+div.plist div.p-content div{
+  margin-top: 10px;
+}
+/*价格*/
+div.plist div.p-content span.p-price{
+  font-size: 18px;
+  margin: 10px;
+}
+/*加入购物车*/
+div.plist div.p-detail div.p-content a.cart{
+  display: inline;
+  padding: 10px;
+  background: black;
+  color: white;
+  float: right;
+  margin-top: 10px;
+}

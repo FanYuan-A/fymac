@@ -1,0 +1,147 @@
+html{
+    width: 100%
+}
+#header-top{
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+}
+#footer-bottom{
+    width: 100%;
+
+    height: 420px;
+}
+div.p-main{
+    width: 80%;
+    margin: 0 auto;
+
+}
+/*固定导航栏*/
+div.p-fixed{
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+div.product-fixed-nav{
+    position: fixed;
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid #c7c7c7;
+    z-index: 100;
+    display: block;
+    top:50px;
+    margin: 0 auto;
+    line-height: 1.5;
+    padding-top: 10px;
+}
+header.submenu-header{
+    width: 100%;
+    /*box-sizing: border-box;*/
+    border-right: 1px solid #dbdbdb;
+    float: left;
+    width: 30%;
+    text-align: right;
+    padding: 0 10px;
+}
+
+ div.product-fixed-nav nav.submenu-nav ul li {
+    float: left;
+    padding: 0 15px;
+    margin-top: 10px;
+}
+ div.product-fixed-nav nav.submenu-nav ul li a:hover{
+    text-decoration: underline;
+}
+
+/*商品列*/
+div.plist{
+    display: flex;
+    flex-direction: column;
+}
+div.plist div.p-detail{
+    border-top: 1px solid #c7c7c7;
+    margin:10px 5px;
+    width: 24%;
+    box-sizing: border-box;
+}
+div.plist  div.p-detail div.p-header-detail{
+    height: 100px;
+}
+div.plist  h1{
+    text-align: center;
+    margin: 100px 0 30px 0;
+}
+div.plist div.hottaozhuang div.p-hotlist{
+    display: flex;
+  flex-wrap: wrap;
+    /*width: 50%;*/
+}
+div.plist  p.p-detail{
+    margin-top: 50px;
+    padding: 5px;
+  width: 24%;
+}
+div.plist  div.p-detail p{
+    font-size: 12px;
+}
+div.plist  div.p-detail p.p-title{
+    font-size: 20px;
+    margin: 10px 0;
+}
+div.plist  div.p-detail p.p-title:hover{
+    color:#68696D;
+}
+div.plist  div.p-detail div.p-img{
+    margin-top: 20px;
+
+}
+div.p-header-detail a.collect{
+    float: right;
+}
+div.plist{
+    margin: 0 auto;
+    width: 100%;
+}
+div.plist div.p-content{
+    border-top: 1px solid #c7c7c7;
+
+}
+div.plist div.p-content div{
+    margin-top: 10px;
+}
+div.plist div.p-content span.p-price{
+    font-size: 18px;
+    margin: 10px;
+}
+div.plist div.p-detail div.p-content a.cart{
+    display: inline;
+    padding: 10px;
+    background: black;
+    color: white;
+    float: right;
+    margin-top: 10px;
+}
+div.plist div.p-redlist,div.p-orangelist{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+/*楼层*/
+#fbuttons{
+  position: fixed;
+  left: 0;
+  top: 35%;
+  display: flex;
+  flex-direction: column;
+}
+#fbuttons>button{
+  padding:20px 10px;
+  font-size: 18px;
+
+}
+.btnactive{
+  background: red;
+}
+
+
+

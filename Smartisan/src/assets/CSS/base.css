@@ -1,0 +1,16 @@
+body{
+    width: 100%;
+    margin: 0 auto;
+    font-family: roboto-mono_regular,Helvetica,Arial,Sans-Serif;
+}
+body a{
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+}
+div.online{
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}
